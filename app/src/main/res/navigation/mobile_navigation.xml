@@ -22,4 +22,14 @@
         android:name="com.example.tpo3.ui.slideshow.SlideshowFragment"
         android:label="@string/salir"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/detalleDelProductoFragment"
+        android:name="com.example.tpo3.ui.DetalleDelProducto.DetalleDelProductoFragment"
+        android:label="DetalleDelProductoFragment"
+        tools:layout="@layout/fragment_detalle_del_producto" />
+    <fragment
+        android:id="@+id/eliminarFragment"
+        android:name="com.example.tpo3.ui.Eliminar.EliminarFragment"
+        android:label="@string/eliminar"
+        tools:layout="@layout/fragment_eliminar" />
 </navigation>

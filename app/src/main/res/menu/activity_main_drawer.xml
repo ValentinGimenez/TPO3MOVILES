@@ -15,6 +15,10 @@
             android:title="@string/listar" />
 
         <item
+            android:id="@+id/eliminarFragment"
+            android:icon="@drawable/eliminar"
+            android:title="@string/eliminar" />
+        <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/exit"
             android:title="@string/salir" />
