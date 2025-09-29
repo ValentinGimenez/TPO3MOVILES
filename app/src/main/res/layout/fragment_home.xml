@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#F5F7FA"
+    tools:context=".ui.home.HomeFragment">
+
+    <EditText
+        android:id="@+id/etCodigo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="Código del producto"
+        android:backgroundTint="#1976D2"
+        android:textColor="#0D47A1"
+        android:textColorHint="#64B5F6"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etDescripcion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Descripción del producto"
+        android:backgroundTint="#388E3C"
+        android:textColor="#1B5E20"
+        android:textColorHint="#81C784"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/etCodigo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etPrecio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Precio del producto"
+        android:backgroundTint="#F57C00"
+        android:textColor="#E65100"
+        android:textColorHint="#FFB74D"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/etDescripcion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btCargar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/cargar"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#D32F2F"
+        android:padding="12dp"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/etPrecio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
