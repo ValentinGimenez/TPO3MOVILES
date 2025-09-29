@@ -58,6 +58,13 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        mv.getMLimpiarCampos().observe(getViewLifecycleOwner(), limpiar -> {
+            if (limpiar != null && limpiar) {
+                binding.etCodigo.setText("");
+                binding.etDescripcion.setText("");
+                binding.etPrecio.setText("");
+            }
+        });
         return root;
     }
 

@@ -11,6 +11,7 @@ import com.example.tpo3.model.Producto;
 public class HomeViewModel extends ViewModel {
 
     private MutableLiveData<String> mError, mCorrecto;
+    private MutableLiveData<Boolean> mLimpiarCampos;
 
     public LiveData<String> getMError() {
         if(mError==null){
@@ -24,6 +25,13 @@ public class HomeViewModel extends ViewModel {
             mCorrecto = new MutableLiveData<>();
         }
         return mCorrecto;
+    }
+
+    public LiveData<Boolean> getMLimpiarCampos() {
+        if (mLimpiarCampos == null) {
+            mLimpiarCampos = new MutableLiveData<>();
+        }
+        return mLimpiarCampos;
     }
 
     public void validacion(String codigo, String descripcion, String precio) {
@@ -58,6 +66,7 @@ public class HomeViewModel extends ViewModel {
         Producto producto = new Producto(codigo,descripcion,Double.parseDouble(precio));
         listado.add(producto);
         mCorrecto.setValue("¡Producto agregado correctamente!");
+        mLimpiarCampos.setValue(true);
     }
 
 }
